@@ -39,7 +39,7 @@ Este projeto simula um processo de cadastro de torcedores da FURIA, dividido em 
    ```
 2. Acesse a pasta:
    ```bash
-   cd conheca-seu-fa-furia
+   cd cadastro-furia
    ```
 3. Abra o arquivo `index.html` no navegador.
 
