@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conheça seu Fã - FURIA 🐾</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Conheça Seu Fã - FURIA 🐾</h1>
+    <section id="cadastro">
+      <h2>Cadastro</h2>
+      <input type="text" id="nome" placeholder="Nome Completo">
+      <input type="text" id="endereco" placeholder="Endereço">
+      <input type="text" id="cpf" placeholder="CPF">
+      <textarea id="interesses" placeholder="Interesses em e-Sports (Ex: CS:GO, Valorant)"></textarea>
+      <button onclick="proximaEtapa('upload')">Próximo</button>
+    </section>
+    <section id="upload" class="hidden">
+      <h2>Upload de Documento</h2>
+      <input type="file" id="documento">
+      <button onclick="validarDocumento()">Validar Documento</button>
+      <div id="resultadoUpload"></div>
+    </section>
+    <section id="redes" class="hidden">
+      <h2>Redes Sociais</h2>
+      <input type="text" id="instagram" placeholder="Link do Instagram">
+      <input type="text" id="twitter" placeholder="Link do Twitter">
+      <button onclick="validarRedes()">Validar Redes</button>
+      <div id="resultadoRedes"></div>
+    </section>
+    <section id="perfis" class="hidden">
+      <h2>Perfis em Sites de e-Sports</h2>
+      <input type="text" id="perfilEsports" placeholder="Link do perfil (ex: HLTV)">
+      <button onclick="validarPerfilEsports()">Validar Perfil</button>
+      <div id="resultadoPerfil"></div>
+    </section>
+    <section id="finalizacao" class="hidden">
+      <h2>Cadastro Completo! 🎉</h2>
+      <p>Obrigado por compartilhar suas informações. Agora você faz parte da torcida oficial da FURIA! 🐾</p>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
